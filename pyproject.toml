@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "magic-hour-haystack"
+version = "0.1.0"
+description = "Recoverable Magic Hour image generation components for Haystack pipelines"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Magic Hour"}]
+dependencies = ["haystack-ai>=3.4,<3.5"]
+
+[project.urls]
+Homepage = "https://magichour.ai"
+Repository = "https://github.com/magichourhq/magic-hour-haystack"
+Issues = "https://github.com/magichourhq/magic-hour-haystack/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/magic_hour_haystack"]
