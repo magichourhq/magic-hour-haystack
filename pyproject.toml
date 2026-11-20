@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "magic-hour-haystack"
-version = "0.1.0"
+version = "0.1.1"
 description = "Recoverable Magic Hour image generation components for Haystack pipelines"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 authors = [{name = "Magic Hour"}]
-dependencies = ["haystack-ai>=3.4,<3.5"]
+dependencies = ["haystack-ai>=3.0,<4"]
 
 [project.urls]
 Homepage = "https://magichour.ai"

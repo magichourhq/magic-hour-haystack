@@ -15,7 +15,13 @@ env:
 
 jobs:
   test:
+    name: test (${{ matrix.haystack }} haystack)
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The oldest Haystack pyproject.toml allows, and the newest.
+        haystack: [oldest, latest]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -24,4 +30,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install .
+      - if: matrix.haystack == 'oldest'
+        run: pip install haystack-ai==3.0.0
+      - run: pip show haystack-ai
       - run: python -m unittest discover -s tests -v
