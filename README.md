@@ -10,7 +10,7 @@ It uses the `z-image-turbo` model and makes one square 640-pixel image per call.
 pip install magic-hour-haystack
 ```
 
-Requires Python 3.11 or newer and Haystack 3.4 or newer. Set `MAGIC_HOUR_API_KEY` to a key from your [Magic Hour developer dashboard](https://magichour.ai/developer).
+Requires Python 3.11 or newer and Haystack 3.0 or newer. Set `MAGIC_HOUR_API_KEY` to a key from your [Magic Hour developer dashboard](https://magichour.ai/developer).
 
 ## Components
 

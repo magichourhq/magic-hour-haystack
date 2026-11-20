@@ -31,6 +31,6 @@ jobs:
           python-version: "3.12"
       - run: pip install .
       - if: matrix.haystack == 'oldest'
-        run: pip install haystack-ai==3.4.0
+        run: pip install haystack-ai==3.0.0
       - run: pip show haystack-ai
       - run: python -m unittest discover -s tests -v
