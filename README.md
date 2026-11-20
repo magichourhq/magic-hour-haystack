@@ -1,5 +1,7 @@
 # Magic Hour for Haystack
 
+[![PyPI](https://img.shields.io/pypi/v/magic-hour-haystack)](https://pypi.org/project/magic-hour-haystack/)
+
 Generate images with [Magic Hour](https://magichour.ai) in [Haystack](https://haystack.deepset.ai) pipelines. Creating an image and retrieving it are separate components, so you can save the project ID in between and resume a job without paying for it again.
 
 It uses the `z-image-turbo` model and makes one square 640-pixel image per call.
